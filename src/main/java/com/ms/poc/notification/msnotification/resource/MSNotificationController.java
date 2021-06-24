@@ -31,6 +31,11 @@ public class MSNotificationController {
 		return confirmationRepo.findAll();			
 	}
 	
+	@GetMapping("/test1")
+	public String getConfirmation() {
+		return "test123";			
+	}
+	
 	@GetMapping("/getConfirmation/{id}")
 	public Confirmation getOneConfirmation(@PathVariable int id) {
 		 Optional<Confirmation> confirmation = confirmationRepo.findById(id);	
