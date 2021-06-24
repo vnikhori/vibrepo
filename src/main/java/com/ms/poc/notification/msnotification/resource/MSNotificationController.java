@@ -32,7 +32,7 @@ public class MSNotificationController {
 	}
 	
 	@GetMapping("/test1")
-	public String getConfirmation() {
+	public String getTest() {
 		return "test123";			
 	}
 	
